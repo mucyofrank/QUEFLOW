@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa"><title>QueueFlow — Join a queue</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script defer src="config.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">Q</span> QueueFlow</a><nav><a href="track.html">Track ticket</a><a class="nav-cta" href="staff.html">Staff portal</a></nav></header>
+<main class="shell">
+  <section class="hero"><div class="eyebrow">SMARTER WAITING STARTS HERE</div><h1>Your time matters.<br><span>Skip the line, not your day.</span></h1><p>Join a service queue in seconds and follow your place in real time.</p></section>
+  <section class="panel join-panel">
+    <div class="panel-heading"><div><div class="eyebrow">QUEUE REGISTRATION</div><h2>Get your queue ticket</h2></div><span class="live-pill"><i></i> Live queue</span></div>
+    <form id="join-form">
+      <label for="customer-name">Your name</label><input id="customer-name" maxlength="80" required placeholder="Enter your name">
+      <label for="service-select">Choose a service</label><select id="service-select" required><option value="">Loading services…</option></select>
+      <button class="button primary full" type="submit" id="join-button">Join the queue <span>→</span></button>
+      <p class="form-note" id="join-message" role="status">Demo center services are available.</p>
+    </form>
+  </section>
+  <section class="feature-row"><article><b>01</b><h3>Join instantly</h3><p>Register without standing in line.</p></article><article><b>02</b><h3>Know your place</h3><p>See your queue position and estimated wait.</p></article><article><b>03</b><h3>Arrive at the right time</h3><p>Follow updates as staff serve customers.</p></article></section>
+</main>
+<footer>QueueFlow <span>·</span> A smarter way to manage queues</footer>
+</body></html>

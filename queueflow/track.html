@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Track your ticket — QueueFlow</title><link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script defer src="config.js"></script><script defer src="track.js"></script></head>
+<body><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">Q</span> QueueFlow</a><nav><a href="index.html">Join queue</a><a class="nav-cta" href="staff.html">Staff portal</a></nav></header>
+<main class="shell narrow"><div class="page-intro"><div class="eyebrow">YOUR QUEUE STATUS</div><h1>Track your ticket</h1><p>Enter the tracking code shown on your ticket.</p></div>
+<section class="panel"><form id="track-form"><label for="tracking-code">Tracking code</label><input id="tracking-code" required placeholder="Paste your tracking code"><button class="button primary full">Check status <span>→</span></button><p class="form-note" id="track-message" role="status"></p></form></section>
+<section id="ticket-result" class="panel ticket-result hidden" aria-live="polite"></section></main><footer>QueueFlow <span>·</span> Your place, made clear</footer></body></html>
